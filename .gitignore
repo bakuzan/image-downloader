@@ -1,0 +1,16 @@
+# Folders
+node_modules
+
+# Files
+.env
+*.sqlite
+
+# Temp files
+**/cache/*.html
+**/cache/*.json
+**/output/*.html
+**/output/*.json
+**/output/*.txt
+**/output/*.jpg
+**/output/*.jpeg
+**/output/*.png

@@ -1,0 +1,46 @@
+{
+  "name": "image-downloader",
+  "version": "1.0.0",
+  "description": "Using configurable pattern to loop and download images from websites",
+  "main": "src/index.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bakuzan/image-downloader"
+  },
+  "scripts": {
+    "start": "ts-node -r tsconfig-paths/register --files ./src/index.ts",
+    "lint": "lint-staged"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint"
+    }
+  },
+  "lint-staged": {
+    "{,src}/**/*.{ts,js}": [
+      "eslint --fix"
+    ]
+  },
+  "author": "bakuzan",
+  "license": "ISC",
+  "dependencies": {
+    "@types/cheerio": "^0.22.29",
+    "@types/minimist": "^1.2.1",
+    "@typescript-eslint/eslint-plugin": "^4.26.0",
+    "@typescript-eslint/parser": "^4.26.0",
+    "cheerio": "^1.0.0-rc.9",
+    "dotenv": "^10.0.0",
+    "eslint": "^7.28.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "got": "^11.8.2",
+    "husky": "^6.0.0",
+    "lint-staged": "^11.0.0",
+    "medea": "file:../medea",
+    "prettier": "^2.3.1",
+    "stdio": "^2.1.1",
+    "ts-node": "^10.0.0",
+    "tsconfig-paths": "^3.9.0",
+    "typescript": "^4.3.2"
+  }
+}
